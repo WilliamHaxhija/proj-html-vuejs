@@ -15,9 +15,9 @@
                     'Our Process',
                     'Pricing',
                     'Blog',
-                    'Contact',
-                    'Get a Quote'
-                ]
+                    'Contact'
+                ],
+				logo: 'logo.png'
             }
         }
     }
@@ -26,7 +26,7 @@
 
 <template>
 
-    <PageHeader></PageHeader>
+    <PageHeader :logoImg="logo" :navLinks="navBar"></PageHeader>
 
 </template>
 

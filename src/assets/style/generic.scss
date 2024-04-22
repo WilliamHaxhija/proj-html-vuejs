@@ -1,6 +1,9 @@
+@import"node_modules/bootstrap/scss/bootstrap";
+
 .ms-btn {
     border: none;
     border-radius: 50px;
-    padding: 0.5rem 1.6rem;
+    padding: 0.6rem 1.7rem;
     background-color: white;
+    width: fit-content;
 }
