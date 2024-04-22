@@ -2,11 +2,13 @@
 
     import PageHeader from './components/PageHeader.vue';
     import FirstSection from './components/FirstSection.vue';
+    import QuickSection from './components/QuickSection.vue';
 
     export default {
       components: {
         PageHeader,
-        FirstSection
+        FirstSection,
+        QuickSection
       },
 	  data () {
             return {
@@ -30,6 +32,7 @@
 
     <PageHeader :logoImg="logo" :navLinks="navBar"></PageHeader>
     <FirstSection></FirstSection>
+    <QuickSection></QuickSection>
 
 </template>
 
