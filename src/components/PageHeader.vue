@@ -1,13 +1,22 @@
 <script>
 
+    import PageHero from './PageHero.vue'
+
     export default {
-        name: 'PageHeader'
+        name: 'PageHeader',
+        components: {
+            PageHero
+        }
     }
 
 </script>
 
 <template>
-    <button class="ms-btn">Get a Quote</button>
+
+    <header>
+        <PageHero></PageHero>
+    </header>
+
 </template>
 
 <style scoped lang="scss">
