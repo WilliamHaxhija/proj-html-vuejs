@@ -5,7 +5,21 @@
     export default {
       components: {
         PageHeader
-      }
+      },
+	  data () {
+            return {
+                navBar: [
+                    'Home',
+                    'About Us',
+                    'Portfolio',
+                    'Our Process',
+                    'Pricing',
+                    'Blog',
+                    'Contact',
+                    'Get a Quote'
+                ]
+            }
+        }
     }
 
 </script>

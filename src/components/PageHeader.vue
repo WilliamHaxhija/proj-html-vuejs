@@ -14,6 +14,7 @@
 <template>
 
     <header>
+
         <PageHero></PageHero>
     </header>
 
