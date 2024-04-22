@@ -1,0 +1,44 @@
+@import"node_modules/bootstrap/scss/bootstrap";
+
+* {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(65, 64, 64);
+
+    &:hover {
+        background: rgb(95, 95, 95);
+    }
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(95, 95, 95);
+    border-radius: 30px;
+
+    &:hover {
+        background: rgb(144, 144, 144);
+    }
+}
+
+.ms-btn {
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 0.5rem 1.7rem;
+    background-color: white;
+    color: black;
+    width: fit-content;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.356);
+
+    &:hover {
+        background-color: #270164;
+        color: white;
+        transition: 0.2s
+    }
+}
