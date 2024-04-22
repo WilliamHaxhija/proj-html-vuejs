@@ -1,10 +1,12 @@
 <script>
 
     import PageHeader from './components/PageHeader.vue';
+    import FirstSection from './components/FirstSection.vue';
 
     export default {
       components: {
-        PageHeader
+        PageHeader,
+        FirstSection
       },
 	  data () {
             return {
@@ -27,6 +29,7 @@
 <template>
 
     <PageHeader :logoImg="logo" :navLinks="navBar"></PageHeader>
+    <FirstSection></FirstSection>
 
 </template>
 
