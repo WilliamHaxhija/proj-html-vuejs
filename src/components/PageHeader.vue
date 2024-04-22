@@ -22,7 +22,7 @@ export default {
 
 <template>
 
-    <header>
+    <header class="pb-5">
 
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -45,6 +45,9 @@ export default {
         
         <PageHero></PageHero>
 
+        <div>
+            <img class="shape" src="../assets/img/bottom-shape.png" alt="shape">
+        </div>
     </header>
 
 </template>
@@ -54,7 +57,12 @@ export default {
 @use '../assets/style/generic.scss';
 
 header {
-    background-color: grey;
+    background-image: url('../assets/img/banner-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+
 
     .ms-link {
         color: white;
@@ -62,6 +70,14 @@ header {
 
     .nav-btn {
         margin-left: 0.8rem;
+    }
+
+    .shape {
+        max-width: 100%;
+        object-fit: contain;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 }
 
