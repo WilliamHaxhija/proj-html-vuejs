@@ -9,6 +9,11 @@ export default {
     methods: {
         getImageUrl(string) {
             return new URL(`../assets/img/${string}`, import.meta.url).href;
+        },
+        scrollToTop() {
+            scrollTo({
+                top: 0
+            });
         }
     }
 }
@@ -39,7 +44,7 @@ export default {
                 </div>
             </div>
         </div>
-        <div class="footer-btn d-flex align-items-center justify-content-center">
+        <div class="footer-btn d-flex align-items-center justify-content-center" @click="scrollToTop">
             <i class="fa-solid fa-arrow-up"></i>
         </div>
     </footer>
