@@ -35,7 +35,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../style/generic.scss' as *;
+
 @use '../style/partials/variables.scss' as *;
 
 h4 {

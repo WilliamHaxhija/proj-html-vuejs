@@ -37,19 +37,20 @@ export default {
                     </div>
                 </div>
                 <div class="ms-3">
-                    <button class="ms-btn arrow-btn position-relative border mt-4 me-3"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="ms-btn arrow-btn position-relative border mt-4"><i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="ms-btn arrow-btn position-relative border mt-4 me-3"><i
+                            class="fa-solid fa-arrow-left"></i></button>
+                    <button class="ms-btn arrow-btn position-relative border mt-4"><i
+                            class="fa-solid fa-arrow-right"></i></button>
                 </div>
-                <img class="space-ship" src="../assets/img/smart4.png" alt="smart4">
             </div>
         </div>
         <img class="big-img" src="../assets/img/process-thumb.png" alt="process">
+        <img class="space-ship" src="../assets/img/smart4.png" alt="smart4">
     </section>
 
 </template>
 
 <style scoped lang="scss">
-@use '../style/generic.scss' as *;
 @use '../style/partials/variables.scss' as *;
 
 h4 {
@@ -121,8 +122,12 @@ h4 {
         justify-content: center;
     }
 
-    .space-ship {
-        width: 90px;
-    }
+}
+
+.space-ship {
+    position: absolute;
+    width: 90px;
+    bottom: -105px;
+    right: 0;
 }
 </style>

@@ -33,7 +33,6 @@
 
 <style scoped lang="scss">
 
-@use '../style/generic.scss';
 @use '../style/partials/variables.scss' as *;
 
 * {

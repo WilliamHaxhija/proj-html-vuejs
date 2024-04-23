@@ -8,7 +8,7 @@ export default {
 
 <template>
 
-    <section class="ms-margin">
+    <section class="ms-margin position-relative">
 
         <div class="container-fluid position-relative text-center">
             <div class="titles">
@@ -40,10 +40,10 @@ export default {
                     <h3 class="mb-2">Creativity</h3>
                     <p>We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep,
                         we'll drill deep to deliver above and beyond your expectations.</p>
-                    <img class="space-ship" src="../assets/img/smart4.png" alt="smart4">
                 </div>
             </div>
         </div>
+        <img class="space-ship" src="../assets/img/smart4.png" alt="smart4">
 
     </section>
 
@@ -113,7 +113,7 @@ export default {
 .space-ship {
     position: absolute;
     width: 90px;
-    bottom: -105px;
-    right: -65px;
+    bottom: 0;
+    right: 0;
 }
 </style>
