@@ -6,6 +6,7 @@
     import OurWorksSection from './components/OurWorksSection.vue';
     import OurProcessSection from './components/OurProcessSection.vue';
     import TeamSection from './components/TeamSection.vue';
+    import WhySection from './components/WhySection.vue';
 
     export default {
       components: {
@@ -14,7 +15,8 @@
         QuickSection,
         OurWorksSection,
         OurProcessSection,
-        TeamSection
+        TeamSection,
+        WhySection
       },
 	  data () {
             return {
@@ -42,6 +44,7 @@
     <OurWorksSection></OurWorksSection>
     <OurProcessSection></OurProcessSection>
     <TeamSection></TeamSection>
+    <WhySection></WhySection>
 
 </template>
 
