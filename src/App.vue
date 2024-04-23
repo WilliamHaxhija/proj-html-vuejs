@@ -4,13 +4,15 @@
     import FirstSection from './components/FirstSection.vue';
     import QuickSection from './components/QuickSection.vue';
     import OurWorksSection from './components/OurWorksSection.vue';
+    import OurProcessSection from './components/OurProcessSection.vue';
 
     export default {
       components: {
         PageHeader,
         FirstSection,
         QuickSection,
-        OurWorksSection
+        OurWorksSection,
+        OurProcessSection
       },
 	  data () {
             return {
@@ -36,6 +38,7 @@
     <FirstSection></FirstSection>
     <QuickSection></QuickSection>
     <OurWorksSection></OurWorksSection>
+    <OurProcessSection></OurProcessSection>
 
 </template>
 
