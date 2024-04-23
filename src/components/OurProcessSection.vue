@@ -74,6 +74,12 @@ h4 {
     border-radius: 25px;
     padding: 1.5rem 1rem;
 
+    &:hover {
+        background-image: linear-gradient(white, #fff3ea);
+        border: 2px solid white;
+        transition: 0.5s;
+    }
+
     .img-ctn {
         width: 110px;
         height: 100px;

@@ -87,6 +87,11 @@ h4 {
     img {
         max-width: 50%;
         margin: -60px auto 0 auto;
+
+        &:hover {
+            transform: scale(1.5);
+            transition: 0.5s;
+        }
     }
 }
 

@@ -47,6 +47,12 @@ h4 {
 
 .ms-card {
     border: none;
+
+    &:hover {
+        filter: invert(1);
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 </style>

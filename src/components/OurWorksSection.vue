@@ -50,6 +50,11 @@ h4 {
     max-width: 45%;
     margin: 1rem;
 
+    &:hover {
+        transform: scale(1.05);
+        transition: 0.4s;
+    }
+
     img {
         max-width: 100%;
     }

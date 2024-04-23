@@ -68,6 +68,11 @@ section {
         border-radius: 12px;
         z-index: 3;
 
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.2s;
+        }
+
         div {
             color: #ff7a1f;
         }

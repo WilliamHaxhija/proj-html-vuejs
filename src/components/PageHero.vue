@@ -1,8 +1,8 @@
 <script>
 
-    export default {
-        name: 'PageHero'
-    }
+export default {
+    name: 'PageHero'
+}
 
 </script>
 
@@ -32,7 +32,6 @@
 </template>
 
 <style scoped lang="scss">
-
 @use '../style/partials/variables.scss' as *;
 
 * {
@@ -76,6 +75,11 @@ h4 {
 .hero {
     z-index: 9;
     width: 100%;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 .ms-btn {
@@ -93,6 +97,14 @@ h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
 
+    i {
+        font-size: 1.3rem;
+    }
+
+    &:hover {
+        background-color: $brand-secondary;
+        transition: 0.2s;
+    }
+}
 </style>

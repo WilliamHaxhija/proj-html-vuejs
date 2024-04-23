@@ -100,14 +100,32 @@ export default {
 
 .card-1 {
     background-image: linear-gradient(white, #fff3ea);
+
+    &:hover {
+        background-image: linear-gradient(#fff3ea, white);
+        border: 2px solid white;
+        transition: 0.5s;
+    }
 }
 
 .card-2 {
     background-image: linear-gradient(white, #eeebfc);
+
+    &:hover {
+        background-image: linear-gradient(#eeebfc, white);
+        border: 2px solid white;
+        transition: 0.5s;
+    }
 }
 
 .card-3 {
     background-image: linear-gradient(white, #ffe7e7);
+
+    &:hover {
+        background-image: linear-gradient(#ffe7e7, white);
+        border: 2px solid white;
+        transition: 0.5s;
+    }
 }
 
 .space-ship {
