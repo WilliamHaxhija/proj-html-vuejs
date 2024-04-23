@@ -2,11 +2,13 @@
 
     import PageHeader from './components/PageHeader.vue';
     import PageMain from './components/PageMain.vue';
+    import PageFooter from './components/PageFooter.vue';
 
     export default {
       components: {
         PageHeader,
-        PageMain
+        PageMain,
+        PageFooter
       },
 	  data () {
             return {
@@ -19,7 +21,14 @@
                     'Blog',
                     'Contact'
                 ],
-				logo: 'logo.png'
+				logo: 'logo.png',
+                footerLinks: [
+                    'About Us',
+                    'Portfolio',
+                    'Pricing',
+                    'Career',
+                    'Contact'
+                ]
             }
         }
     }
@@ -30,6 +39,7 @@
 
     <PageHeader :logoImg="logo" :navLinks="navBar"></PageHeader>
     <PageMain></PageMain>
+    <PageFooter :logoImg="logo" :links="footerLinks"></PageFooter>
 
 </template>
 
