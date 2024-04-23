@@ -8,7 +8,7 @@ export default {
 
 <template>
 
-    <section class="mt-5 pt-5">
+    <section class="my-5 py-5">
         <div class="container">
             <div class="titles w-50 text-center mt-5 pt-5 mx-auto">
                 <h4>Why Anidio Studio?</h4>

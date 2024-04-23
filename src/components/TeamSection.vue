@@ -134,6 +134,7 @@ h4 {
         cursor: pointer;
 
         &:hover {
+            color: black;
             transform: scale(1.2);
             transition: 0.2s;
         }

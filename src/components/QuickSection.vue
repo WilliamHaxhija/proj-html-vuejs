@@ -31,24 +31,20 @@ export default {
             </div>
         </div>
         <img class="globe" src="../assets/img/globe.png" alt="globe">
-        <div>
-            <img class="waves bottom" src="../assets/img/shape-bottom.png" alt="waves-bottom">
-        </div>
-        <div>
-            <img class="waves top" src="../assets/img/shape-top.png" alt="waves-top">
-        </div>
+        <img class="waves bottom" src="../assets/img/shape-bottom.png" alt="waves-bottom">
+        <img class="waves top" src="../assets/img/shape-top.png" alt="waves-top">
     </section>
 
 </template>
 
 <style scoped lang="scss">
-
 section {
     background-image: url('../assets/img/counter-bg.png');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     color: white;
-    padding: 5rem;
+    padding: 5rem 0;
 
     .globe {
         position: absolute;
@@ -97,5 +93,4 @@ section {
         left: 0;
     }
 }
-
 </style>
