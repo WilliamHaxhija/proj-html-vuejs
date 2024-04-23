@@ -59,24 +59,10 @@ h4 {
 
 .titles-ctn {
     max-width: 48%;
-
-    .arrow-btn {
-        width: 50px;
-        height: 50px;
-        padding: 1.5rem;
-        border-radius: 50px;
-
-        i {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
 }
 
 .big-img {
-    width: 58%;
+    width: 750px;
     position: absolute;
     top: 0;
     left: -190px;

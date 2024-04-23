@@ -29,7 +29,7 @@ body {
 
 h1 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h4 {
@@ -49,5 +49,20 @@ h4 {
         background-color: #270164;
         color: white;
         transition: 0.2s
+    }
+}
+
+.arrow-btn {
+    width: 50px;
+    height: 50px;
+    padding: 1.5rem;
+    border-radius: 50px;
+    color: gray;
+
+    i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
