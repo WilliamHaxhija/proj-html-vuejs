@@ -37,7 +37,7 @@ section {
     background-position: center;
     background-size: cover;
     padding: 5rem 0;
-    margin: 8rem 0;
+    margin: 4rem 0 8rem 0;
 }
 
 .titles {

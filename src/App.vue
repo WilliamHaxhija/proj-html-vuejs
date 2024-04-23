@@ -1,24 +1,12 @@
 <script>
 
     import PageHeader from './components/PageHeader.vue';
-    import FirstSection from './components/FirstSection.vue';
-    import QuickSection from './components/QuickSection.vue';
-    import OurWorksSection from './components/OurWorksSection.vue';
-    import OurProcessSection from './components/OurProcessSection.vue';
-    import TeamSection from './components/TeamSection.vue';
-    import WhySection from './components/WhySection.vue';
-    import SubmitSection from './components/SubmitSection.vue';
+    import PageMain from './components/PageMain.vue';
 
     export default {
       components: {
         PageHeader,
-        FirstSection,
-        QuickSection,
-        OurWorksSection,
-        OurProcessSection,
-        TeamSection,
-        WhySection,
-        SubmitSection
+        PageMain
       },
 	  data () {
             return {
@@ -41,13 +29,7 @@
 <template>
 
     <PageHeader :logoImg="logo" :navLinks="navBar"></PageHeader>
-    <FirstSection></FirstSection>
-    <QuickSection></QuickSection>
-    <OurWorksSection></OurWorksSection>
-    <OurProcessSection></OurProcessSection>
-    <TeamSection></TeamSection>
-    <WhySection></WhySection>
-    <SubmitSection></SubmitSection>
+    <PageMain></PageMain>
 
 </template>
 
