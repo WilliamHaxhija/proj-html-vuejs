@@ -1,4 +1,6 @@
 <script>
+    
+    //*****COMPONENTS*****
 
     import PageHeader from './components/PageHeader.vue';
     import PageMain from './components/PageMain.vue';
@@ -10,6 +12,9 @@
         PageMain,
         PageFooter
       },
+
+        //*****DATA*****
+
 	  data () {
             return {
                 navBar: [
@@ -37,8 +42,13 @@
 
 <template>
 
+    <!-- HEADER -->
     <PageHeader :logoImg="logo" :navLinks="navBar"></PageHeader>
+
+    <!-- MAIN -->
     <PageMain></PageMain>
+    
+    <!-- FOOTER -->
     <PageFooter :logoImg="logo" :links="footerLinks"></PageFooter>
 
 </template>

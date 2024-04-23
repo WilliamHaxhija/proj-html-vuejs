@@ -9,13 +9,18 @@ export default {
 <template>
 
     <section class="position-relative">
+
         <div class="container">
+
+            <!-- TITLES -->
             <div class="titles-ctn position-relative ms-auto">
                 <h4 class="mb-4">Our Process</h4>
                 <h1>Our Process for</h1>
                 <h1>Your Animation</h1>
                 <h1>Production</h1>
                 <div class="mt-4 mb-5">We have an effective process for working on animation.</div>
+
+                <!-- CARDS -->
                 <div class="ms-card-ctn d-flex justify-content-start">
                     <div class="card border ms-card card-3 position relative text-center">
                         <div class="img-ctn mb-3">
@@ -36,6 +41,8 @@ export default {
                         <span class="pb-2">1</span>
                     </div>
                 </div>
+
+                <!-- BUTTONS -->
                 <div class="ms-3">
                     <button class="ms-btn arrow-btn position-relative border mt-4 me-3"><i
                             class="fa-solid fa-arrow-left"></i></button>
@@ -44,14 +51,20 @@ export default {
                 </div>
             </div>
         </div>
+
+        <!-- IMAGES -->
         <img class="big-img" src="../assets/img/process-thumb.png" alt="process">
         <img class="space-ship" src="../assets/img/smart4.png" alt="smart4">
+
     </section>
 
 </template>
 
 <style scoped lang="scss">
+
 @use '../style/partials/variables.scss' as *;
+
+// TITLES
 
 h4 {
     color: $brand-primary;
@@ -61,6 +74,8 @@ h4 {
     max-width: 48%;
 }
 
+// IMAGE
+
 .big-img {
     width: 750px;
     position: absolute;
@@ -68,6 +83,8 @@ h4 {
     left: -190px;
     z-index: -1;
 }
+
+// *****CARDS*****
 
 .ms-card {
     max-width: 50%;

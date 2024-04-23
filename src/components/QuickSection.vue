@@ -9,8 +9,12 @@ export default {
 <template>
 
     <section class="position-relative">
+
         <div class="container text-center">
+            <!-- TITLE -->
             <h1 class="title mb-5">Anidio Quick Facts</h1>
+
+            <!-- CARDS -->
             <div class="d-flex justify-content-between">
                 <div class="card ms-card">
                     <h1>700+</h1>
@@ -30,14 +34,18 @@ export default {
                 </div>
             </div>
         </div>
+
+        <!-- IMAGES -->
         <img class="globe" src="../assets/img/globe.png" alt="globe">
         <img class="waves bottom" src="../assets/img/shape-bottom.png" alt="waves-bottom">
         <img class="waves top" src="../assets/img/shape-top.png" alt="waves-top">
+
     </section>
 
 </template>
 
 <style scoped lang="scss">
+
 section {
     background-image: url('../assets/img/counter-bg.png');
     background-repeat: no-repeat;
@@ -45,6 +53,8 @@ section {
     background-size: cover;
     color: white;
     padding: 5rem 0;
+
+    // GLOBE IMAGE
 
     .globe {
         position: absolute;
@@ -54,11 +64,15 @@ section {
         transform: translate(-50%);
     }
 
+    // SECTION TITLE
+
     .title {
         font-weight: 700;
         position: relative;
         z-index: 5;
     }
+
+    // *****CARDS*****
 
     .ms-card {
         padding: 1.6rem 2.8rem;
@@ -81,6 +95,8 @@ section {
             font-weight: 700;
         }
     }
+
+    // *****SHAPE IMAGES*****
 
     .waves {
         position: absolute;

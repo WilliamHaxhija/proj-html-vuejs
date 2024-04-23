@@ -9,11 +9,16 @@ export default {
 <template>
 
     <section class="ms-padding">
+
         <div class="container text-center">
+
+            <!-- TITLES -->
             <h4 class="mb-3">Our Works</h4>
             <h1 class="mb-3">Featured Productions</h1>
             <div>Here's just a small sample of some of those projects that we're quite proud of.</div>
             <div>If you're looking for something specific, feel free to get in contact with us.</div>
+
+            <!-- CARDS -->
             <div class="d-flex justify-content-center flex-wrap mt-5">
                 <div class="ms-card">
                     <img src="../assets/img/work1.png" alt="work1">
@@ -30,6 +35,7 @@ export default {
             </div>
             <button class="ms-btn border mt-4">See Our Work</button>
         </div>
+
     </section>
 
 </template>
@@ -45,6 +51,8 @@ h4 {
 .ms-padding {
     padding: 8rem 0;
 }
+
+// *****CARDS*****
 
 .ms-card {
     max-width: 45%;

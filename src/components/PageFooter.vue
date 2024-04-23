@@ -6,6 +6,8 @@ export default {
         links: Array,
         logoImg: String
     },
+
+    // METHODS
     methods: {
         getImageUrl(string) {
             return new URL(`../assets/img/${string}`, import.meta.url).href;
@@ -23,20 +25,28 @@ export default {
 <template>
 
     <footer class="pb-4 position-relative">
+
+        <!-- FOOTER TOP -->
         <div class="container">
             <div class="d-flex align-items-center justify-content-between">
+                <!-- DYNAMIC LOGO -->
                 <div class="logo">
                     <img :src="getImageUrl(logoImg)" :alt="logoImg">
                 </div>
+                <!-- DYNAMIC LINKS -->
                 <div class="links">
                     <a class="mx-3" v-for="link in links" href="#">{{ link }}</a>
                 </div>
             </div>
+
             <hr>
+
+            <!-- FOOTER BOTTOM -->
             <div class="container d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
                     Copyright @ 2022 <a class="softvius" href="#">Softvius</a>. All rights reserved.
                 </div>
+                <!-- SOCIALS -->
                 <div class="socials d-flex">
                     <div class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-facebook-f"></i></div>
                     <div class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-twitter"></i></div>
@@ -44,9 +54,12 @@ export default {
                 </div>
             </div>
         </div>
+
+        <!-- SCROLL UP -->
         <div class="footer-btn d-flex align-items-center justify-content-center" @click="scrollToTop">
             <i class="fa-solid fa-arrow-up"></i>
         </div>
+
     </footer>
 
 </template>
@@ -54,6 +67,8 @@ export default {
 <style scoped lang="scss">
 
 @use '../style/partials/variables.scss' as *;
+
+// *****FOOTER TOP*****
 
 .logo {
     filter: invert(1);
@@ -70,6 +85,8 @@ a {
     }
 }
 
+// *****FOOTER BOTTOM*****
+
 .softvius {
     color: $brand-primary;
     margin-left: 0.3rem;
@@ -79,6 +96,8 @@ a {
         transition: 0.2s;
     }
 }
+
+// SOCIALS
 
 .socials {
     div {
@@ -99,6 +118,8 @@ a {
         }
     }
 }
+
+// SROLL UP
 
 .footer-btn {
     width: 40px;

@@ -1,11 +1,15 @@
 @use './partials/variables.scss' as *;
 @import"node_modules/bootstrap/scss/bootstrap";
 
+//*****FONT STYLE*****
+
 body {
     font-family: "Chakra Petch", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
+
+//*****SCROLLBAR*****
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -28,6 +32,8 @@ body {
     }
 }
 
+//*****SECTION HEADINGS*****
+
 h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -36,6 +42,8 @@ h1 {
 h4 {
     font-weight: 600;
 }
+
+//*****BUTTONS*****
 
 .ms-btn {
     border: 1px solid white;

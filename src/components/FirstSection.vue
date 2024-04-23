@@ -11,6 +11,8 @@ export default {
     <section class="ms-margin position-relative">
 
         <div class="container-fluid position-relative text-center">
+
+            <!-- TITLES -->
             <div class="titles">
                 <h4>Our Love For Animation</h4>
                 <h1>We're Storytelling</h1>
@@ -21,6 +23,8 @@ export default {
                     into new ideas!
                 </div>
             </div>
+
+            <!-- CARDS -->
             <img class="big-img" src="../assets/img/smart.png" alt="smart">
             <div class="container mt-5 d-flex ms-padding justify-content-end">
                 <div class="card ms-card card-1">
@@ -50,6 +54,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
+
 @use '../style/partials/variables.scss' as *;
 
 .ms-margin {
@@ -59,6 +64,8 @@ export default {
 .ms-padding {
     padding-bottom: 7rem;
 }
+
+// *****TITLES*****
 
 .titles {
     max-width: 50%;
@@ -82,6 +89,8 @@ export default {
     top: -100px;
     z-index: -1;
 }
+
+// *****CARDS*****
 
 .ms-card {
     max-width: 25%;

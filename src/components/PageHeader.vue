@@ -1,5 +1,7 @@
 <script>
 
+//*****COMPONENTS*****
+
 import PageHero from './PageHero.vue'
 
 export default {
@@ -7,15 +9,21 @@ export default {
     components: {
         PageHero
     },
+
+    //*****PROPS*****
     props: {
         navLinks: Array,
         logoImg: String
     },
+
+    //*****DATA*****
     data () {
         return {
             activeLink: 1
         }
     },
+
+    //*****METHODS*****
     methods: {
         getImageUrl(imgName) {
             return new URL(`../assets/img/${imgName}`, import.meta.url).href;
@@ -32,9 +40,11 @@ export default {
 
     <header class="pb-5">
 
+        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg pt-3 z">
             <div class="container">
                 <a class="navbar-brand" href="#">
+                    <!-- DYANAMIC LOGO -->
                     <img :src="getImageUrl(logoImg)" :alt="logoImg">
                 </a>
                 <button class="navbar-toggler burger" type="button" data-bs-toggle="collapse"
@@ -44,6 +54,7 @@ export default {
                 </button>
                 <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
+                        <!-- DYNAMIC LINKS -->
                         <a v-for="link, index in navLinks" :class="{msactive: activeLink === index}" class="nav-link ms-link me-3" aria-current="page" href="#" @click="activateLink(index)">{{ link }}</a>
                         <button class="ms-btn nav-btn">Get a Quote</button>
                     </div>
@@ -51,6 +62,7 @@ export default {
             </div>
         </nav>
 
+        <!-- HEADER IMAGES -->
         <img class="globe3" src="../assets/img/globe3.png" alt="globe3">
         <img class="globe2" src="../assets/img/globe2.png" alt="globe2">
         <img class="globe1" src="../assets/img/globe1.png" alt="globe1">
@@ -60,9 +72,10 @@ export default {
         <img class="astronaut astronaut-left" src="../assets/img/left-man.png" alt="astronaut">
         <img class="astronaut astronaut-rigth" src="../assets/img/right-man.png" alt="astronaut">
 
-        
+        <!-- HERO -->
         <PageHero></PageHero>
 
+        <!-- WAVES IMAGES -->
         <div>
             <img class="shape" src="../assets/img/bottom-shape.png" alt="shape">
         </div>
@@ -73,6 +86,8 @@ export default {
 <style scoped lang="scss">
 
 @use '../style/partials/variables.scss' as *;
+
+//*****HEADER*****
 
 header {
     background-image: url('../assets/img/banner-bg.png');
@@ -103,6 +118,8 @@ header {
         margin-left: 0.8rem;
     }
 
+    //*****HERO*****
+
     .shape {
         max-width: 100%;
         object-fit: contain;
@@ -110,6 +127,8 @@ header {
         bottom: 0;
         left: 0;
     }
+
+    //*****IMAGES*****
 
     .astronaut {
         max-width: 200px;

@@ -1,5 +1,7 @@
 <script>
 
+// *****COMPONENTS*****
+
 import FirstSection from './FirstSection.vue';
 import QuickSection from './QuickSection.vue';
 import OurWorksSection from './OurWorksSection.vue';
@@ -26,6 +28,7 @@ export default {
 <template>
 
     <main>
+
         <FirstSection></FirstSection>
         <QuickSection></QuickSection>
         <OurWorksSection></OurWorksSection>
@@ -33,6 +36,7 @@ export default {
         <TeamSection></TeamSection>
         <WhySection></WhySection>
         <SubmitSection></SubmitSection>
+        
     </main>
 
 </template>

@@ -9,20 +9,28 @@ export default {
 <template>
 
     <section class="position-relative">
+
         <div class="container text-center">
+
+            <!-- TITLES -->
             <div class="titles w-50 mx-auto">
                 <h4>We Create New Worlds!</h4>
                 <h1>Want Tips On Your</h1>
                 <h1>Storytelling?</h1>
                 <div class="mt-3">Join our newsleter for tips on how to elevate your brand through storytelling.</div>
             </div>
+
+            <!-- INPUT -->
             <div class="input-ctn d-flex justify-content-end align-items-center mt-5 mx-auto p-2">
                 <input type="mail" placeholder="Enter your email">
                 <button class="ms-btn submit-btn">Submit</button>
             </div>
         </div>
+
+        <!-- SHAPE IMAGES -->
         <img class="shape bottom" src="../assets/img/shape-bottom.png" alt="waves-bottom">
         <img class="shape top" src="../assets/img/shape-top.png" alt="waves-top">
+
     </section>
 
 </template>
@@ -40,6 +48,8 @@ section {
     margin: 4rem 0 8rem 0;
 }
 
+// TITLES
+
 .titles {
     color: white;
 }
@@ -47,6 +57,8 @@ section {
 h4 {
     color: $brand-secondary;
 }
+
+// INPUT
 
 .input-ctn {
     border-radius: 50px;
@@ -66,6 +78,8 @@ input {
     border-radius: 40px;
     padding: 0.5rem 1rem;
 }
+
+// SHAPE IMAGES
 
 .shape {
     position: absolute;
