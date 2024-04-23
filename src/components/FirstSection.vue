@@ -48,6 +48,8 @@ export default {
 
 <style scoped lang="scss">
 
+@use '../style/partials/variables.scss' as *;
+
 .ms-margin {
     margin-top: 17rem;
 }
@@ -66,7 +68,7 @@ export default {
     }
 
     h4 {
-        color: #4d36dc;
+        color: $brand-primary;
     }
 }
 

@@ -34,6 +34,7 @@
 <style scoped lang="scss">
 
 @use '../style/generic.scss';
+@use '../style/partials/variables.scss' as *;
 
 * {
     color: white;
@@ -45,7 +46,7 @@ h1 {
 }
 
 h4 {
-    color: #ff7a1f;
+    color: $brand-secondary;
 }
 
 .description {
@@ -87,7 +88,7 @@ h4 {
     height: 50px;
     border: none;
     padding: 2.5rem;
-    background-color: #4d36dc;
+    background-color: $brand-primary;
     border-radius: 50px;
     position: absolute;
     top: 50%;

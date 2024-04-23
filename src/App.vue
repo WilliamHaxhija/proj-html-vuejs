@@ -3,12 +3,14 @@
     import PageHeader from './components/PageHeader.vue';
     import FirstSection from './components/FirstSection.vue';
     import QuickSection from './components/QuickSection.vue';
+    import OurWorksSection from './components/OurWorksSection.vue';
 
     export default {
       components: {
         PageHeader,
         FirstSection,
-        QuickSection
+        QuickSection,
+        OurWorksSection
       },
 	  data () {
             return {
@@ -33,6 +35,7 @@
     <PageHeader :logoImg="logo" :navLinks="navBar"></PageHeader>
     <FirstSection></FirstSection>
     <QuickSection></QuickSection>
+    <OurWorksSection></OurWorksSection>
 
 </template>
 

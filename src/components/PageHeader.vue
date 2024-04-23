@@ -73,6 +73,7 @@ export default {
 <style scoped lang="scss">
 
 @use '../style/generic.scss';
+@use '../style/partials/variables.scss' as *;
 
 header {
     background-image: url('../assets/img/banner-bg.png');
@@ -92,7 +93,7 @@ header {
     }
 
     .msactive {
-        color: #ff7a1f !important;
+        color: $brand-secondary !important;
     }
 
     .burger-icon {
